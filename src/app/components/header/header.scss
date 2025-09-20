@@ -1,0 +1,41 @@
+.bk-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000; /* fondo negro */
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: 40px;
+}
+
+.bk-logo {
+  height: 120px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff; /* texto blanco */
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d4a373; /* marrón claro al pasar el mouse */
+}
+
+nav ul li a.active {
+  color: #d4a373; /* marrón claro para el enlace activo */
+  border-bottom: 2px solid #d4a373;
+}

@@ -1,0 +1,135 @@
+.bk-footer {
+  background: #250E36;
+  color: #fff;
+  padding: 2.5rem 3rem 2rem 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bk-footer-logo img {
+  width: 180px;
+  min-width: 120px;
+  margin-right: 2rem;
+}
+
+.bk-footer-columns {
+  display: flex;
+  flex: 1;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.bk-footer-col {
+  min-width: 220px;
+  margin-right: 70px;
+  margin-left: 0px;
+  h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 0.8rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+  p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.bk-footer-social {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+  }
+}
+
+.bk-footer-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #bdbdbd;
+  margin-right: 0.3rem;
+  &.email {
+    background: #bdbdbd;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 8px; top: 10px;
+      width: 16px; height: 12px;
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 8px; top: 10px;
+      width: 16px; height: 12px;
+      border-bottom: 2px solid #fff;
+      border-radius: 0 0 3px 3px;
+      box-sizing: border-box;
+      transform: skewY(-20deg);
+    }
+  }
+  &.facebook {
+    background: #1877f3;
+    position: relative;
+    &::before {
+      content: "f";
+      position: absolute;
+      left: 10px; top: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .bk-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  .bk-footer-logo img {
+    margin-bottom: 1.5rem;
+  }
+  .bk-footer-columns {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .bk-footer-col {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

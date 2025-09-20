@@ -1,0 +1,229 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bk-hero-delicias {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bk-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .bk-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bk-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  h2 {
+    color: #b97ac9;
+    font-size: 50px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
+  button {
+    background: #c7b07c;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 1.3rem 3.9rem;
+    font-size: 26px;
+    margin-top: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+  }
+  button:hover {
+    background: #b09a6c;
+  }
+}
+
+.bk-menu {
+  position: relative;
+  background: #2d1846;
+  padding: 0 0 3rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bk-menu-triangle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 60px;
+  background: transparent;
+  z-index: 2;
+  pointer-events: none;
+  &::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 60px;
+    background: #000000;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+.bk-menu h2 {
+  margin-top: 120px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  .bk-menu-highlight {
+    color: #b97ac9;
+    font-weight: bold;
+  }
+}
+
+.bk-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
+  column-gap: 127px;
+  row-gap: 72px;
+  margin-bottom: 2.5rem;
+}
+
+.bk-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  background: transparent;
+}
+
+.bk-menu-imgbox {
+  background: #331d4d;
+  border-radius: 32px;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.bk-menu-imgbox img {
+  width: 299px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.bk-menu-item h3,
+.bk-menu-item p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.bk-menu-item h3 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px; // Espacio para la hamburguesa que sobresale
+  margin-bottom: 0.7rem;
+}
+
+.bk-menu-item p {
+  color: #e0e0e0;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.bk-menu-btn {
+  background: #b97ac9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem 3rem;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 460px;
+  margin: 5rem auto 0 auto;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: block;
+}
+
+.bk-menu-btn:hover {
+  background: #a259e6;
+}
+
+@media (max-width: 900px) {
+  .bk-menu-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .bk-menu-item {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .bk-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .bk-menu h2 {
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+  .bk-menu-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
