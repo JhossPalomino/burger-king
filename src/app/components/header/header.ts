@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,33 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
+  meta = inject(Meta);
+
+  constructor() {
+    this.meta.addTag({
+      name: 'org:description',
+      content: 'Pagina de Burger King'
+    })
+
+    this.meta.addTag({
+      property: 'og:title',
+      content: 'Hamburguesas Burger King'
+    })
+
+    this.meta.addTag({
+      property: 'og:description',
+      content: 'En esta pagina encontraras nuestros productos y mas informacion sobre nosotros'
+    })
+
+    this.meta.addTag({
+      property: 'og:image',
+      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+    })
+
+    this.meta.addTag({
+      property: 'og:url',
+      content: 'http://localhost:4200/products'
+    })
+  }
 
 }
