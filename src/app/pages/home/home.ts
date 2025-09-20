@@ -16,7 +16,7 @@ export class Home {
     this.meta.updateTag({ name: 'org:description', content: 'Página Principal' });
     this.meta.updateTag({ property: 'og:title', content: 'Hamburguesas Burger King' });
     this.meta.updateTag({ property: 'og:description', content: 'En esta pagina encontraras nuestros productos y mas informacion sobre nosotros' });
-    this.meta.updateTag({ property: 'og:image', content: 'https://static.wikia.nocookie.net/characters/images/5/5e/Burger-king.jpg/revision/latest/scale-to-width-down/250?cb=20111026181948' });
+    this.meta.updateTag({ property: 'og:image', content: 'https://www.reasonwhy.es/media/cache/destacada/burger-king-dabiz-munoz.jpg' });
     this.meta.updateTag({ property: 'og:url', content: 'https://burger-king-example.vercel.app/home' });
   }
 }
