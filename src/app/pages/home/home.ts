@@ -31,7 +31,7 @@ export class Home {
 
     this.meta.addTag({
       property: 'og:image',
-      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+      content: 'https://static.wikia.nocookie.net/characters/images/5/5e/Burger-king.jpg/revision/latest/scale-to-width-down/250?cb=20111026181948'
     })
 
     this.meta.addTag({

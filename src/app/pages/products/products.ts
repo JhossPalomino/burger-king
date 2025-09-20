@@ -31,7 +31,7 @@ export class Products {
 
     this.meta.addTag({
       property: 'og:image',
-      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+      content: 'https://wallpapers.com/images/hd/burger-king-whopper-stack-n5re7fuahc7y7wht.jpg'
     })
 
     this.meta.addTag({

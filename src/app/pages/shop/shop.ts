@@ -31,7 +31,7 @@ export class Shop {
 
     this.meta.addTag({
       property: 'og:image',
-      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+      content: 'https://www.shutterstock.com/image-photo/burger-king-night-april-10-600nw-2145268661.jpg'
     })
 
     this.meta.addTag({

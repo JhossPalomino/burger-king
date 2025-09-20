@@ -31,7 +31,7 @@ export class AboutUs {
 
     this.meta.addTag({
       property: 'og:image',
-      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+      content: 'https://cdn.prod.website-files.com/631b4b4e277091ef01450237/645f9f2c6766ad01e9c48e25_BLD00165%20(1)%20(2)%20(1).jpg'
     })
 
     this.meta.addTag({
