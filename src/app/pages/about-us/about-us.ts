@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Header } from '../../components/header/header';
 import { Footer } from '../../components/footer/footer';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-us',
@@ -10,5 +11,32 @@ import { Footer } from '../../components/footer/footer';
   styleUrl: './about-us.scss'
 })
 export class AboutUs {
+  meta = inject(Meta);
 
+  constructor() {
+    this.meta.addTag({
+      name: 'org:description',
+      content: 'Pagina sobre nosotros'
+    })
+
+    this.meta.addTag({
+      property: 'og:title',
+      content: 'Hamburguesas Burger King'
+    })
+
+    this.meta.addTag({
+      property: 'og:description',
+      content: 'En esta pagina encontraras informacion sobre nuestros'
+    })
+
+    this.meta.addTag({
+      property: 'og:image',
+      content: 'https://wallpapers.com/images/hd/burger-king-fiery-logo-vxu6h66cdlv86kfb.jpg'
+    })
+
+    this.meta.addTag({
+      property: 'og:url',
+      content: 'https://burger-king-example.vercel.app'
+    })
+  }
 }

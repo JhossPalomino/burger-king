@@ -36,7 +36,7 @@ export class Home {
 
     this.meta.addTag({
       property: 'og:url',
-      content: 'http://localhost:4200/products'
+      content: 'https://burger-king-example.vercel.app'
     })
   }
 
